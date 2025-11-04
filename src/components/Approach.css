@@ -1,0 +1,132 @@
+.approach {
+  background-color: var(--white);
+  padding: 6rem 2rem;
+}
+
+.approach-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.approach-container h2 {
+  text-align: center;
+  color: var(--sage-green);
+  margin-bottom: 4rem;
+}
+
+.approach-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.approach-values {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.value-item {
+  position: relative;
+  padding-left: 5rem;
+  opacity: 0;
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.value-item:nth-child(1) { animation-delay: 0.1s; }
+.value-item:nth-child(2) { animation-delay: 0.2s; }
+.value-item:nth-child(3) { animation-delay: 0.3s; }
+
+.value-number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 3rem;
+  font-family: var(--font-heading);
+  color: var(--soft-sage);
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.value-item h3 {
+  color: var(--dark-gray);
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.value-item p {
+  color: var(--soft-gray);
+  line-height: 1.7;
+}
+
+.approach-info {
+  position: sticky;
+  top: 2rem;
+}
+
+.info-box {
+  background: linear-gradient(135deg, var(--soft-beige) 0%, var(--light-gray) 100%);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.info-box h3 {
+  color: var(--sage-green);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.info-item {
+  margin-bottom: 2rem;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-item strong {
+  display: block;
+  color: var(--dark-gray);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.info-item p {
+  color: var(--soft-gray);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 968px) {
+  .approach-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .approach-info {
+    position: static;
+  }
+
+  .value-item {
+    padding-left: 4rem;
+  }
+
+  .value-number {
+    font-size: 2.5rem;
+  }
+}
