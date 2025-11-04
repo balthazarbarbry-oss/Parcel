@@ -56,8 +56,9 @@
 }
 
 .value-item p {
-  color: var(--soft-gray);
+  color: var(--dark-gray);
   line-height: 1.7;
+  font-weight: 400;
 }
 
 .approach-info {
@@ -95,10 +96,11 @@
 }
 
 .info-item p {
-  color: var(--soft-gray);
+  color: var(--dark-gray);
   font-size: 1rem;
   line-height: 1.6;
   margin: 0;
+  font-weight: 400;
 }
 
 @keyframes slideInLeft {

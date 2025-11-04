@@ -25,7 +25,7 @@ export default function Services() {
   ]
 
   return (
-    <section className="services">
+    <section className="services" id="services">
       <div className="services-container">
         <h2>Mes Accompagnements</h2>
         <p className="services-intro">

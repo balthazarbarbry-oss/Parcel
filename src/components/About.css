@@ -20,6 +20,8 @@
 .about-content p {
   margin-bottom: 1.5rem;
   text-align: justify;
+  color: var(--dark-gray);
+  font-weight: 400;
 }
 
 .about-image {

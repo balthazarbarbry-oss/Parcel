@@ -2,7 +2,7 @@ import './Approach.css'
 
 export default function Approach() {
   return (
-    <section className="approach">
+    <section className="approach" id="approach">
       <div className="approach-container">
         <h2>Mon Approche</h2>
         <div className="approach-content">

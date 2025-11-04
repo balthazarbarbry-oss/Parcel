@@ -18,9 +18,10 @@
 }
 
 .contact-description {
-  color: var(--soft-gray);
+  color: var(--dark-gray);
   margin-bottom: 3rem;
   line-height: 1.8;
+  font-weight: 400;
 }
 
 .contact-details {
@@ -49,8 +50,9 @@
 }
 
 .contact-detail-item p {
-  color: var(--soft-gray);
+  color: var(--dark-gray);
   margin: 0;
+  font-weight: 400;
 }
 
 .contact-form-wrapper {
